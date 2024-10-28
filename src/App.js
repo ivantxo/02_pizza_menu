@@ -1,5 +1,12 @@
+import Pizza from "./Pizza";
+
 function App() {
-  return <div>Hello there</div>;
+  return (
+    <div>
+      <h1>Hello there</h1>
+      <Pizza />
+    </div>
+  );
 }
 
 export default App;
