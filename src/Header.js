@@ -1,7 +1,11 @@
 function Header() {
-  const style = { color: "red", fontSize: "48px", textTransform: "uppercase" };
+  // const style = { color: "red", fontSize: "48px", textTransform: "uppercase" };
 
-  return <h1 style={style}>Fast React Pizza Co.</h1>;
+  return (
+    <header className="header">
+      <h1>Fast React Pizza Co.</h1>
+    </header>
+  );
 }
 
 export default Header;
