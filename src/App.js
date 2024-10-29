@@ -1,10 +1,13 @@
-import Pizza from "./Pizza";
+import Footer from "./Footer";
+import Header from "./Header";
+import Menu from "./Menu";
 
 function App() {
   return (
     <div>
-      <h1>Hello there</h1>
-      <Pizza />
+      <Header />
+      <Menu />
+      <Footer />
     </div>
   );
 }
