@@ -6,7 +6,6 @@ function Footer() {
   const hour = new Date().getHours();
 
   const isOpen = hour >= openHour && hour < closeHour;
-  console.log(isOpen);
 
   return (
     <footer className="footer">
