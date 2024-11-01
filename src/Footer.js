@@ -1,8 +1,9 @@
 import React from "react";
+import Order from "./Order";
 
 function Footer() {
-  const openHour = 12;
-  const closeHour = 23;
+  const openHour = 0;
+  const closeHour = 6;
   const hour = new Date().getHours();
 
   const isOpen = hour >= openHour && hour < closeHour;
@@ -10,12 +11,7 @@ function Footer() {
   return (
     <footer className="footer">
       {isOpen ? (
-        <div className="order">
-          <p>
-            We are open until {closeHour}:00. Come visit us or order online.
-          </p>
-          <button className="btn">Order</button>
-        </div>
+        <Order closeHours={closeHour} />
       ) : (
         <p>
           We are happy to welcome you between {openHour}:00 and {closeHour}:00{" "}
